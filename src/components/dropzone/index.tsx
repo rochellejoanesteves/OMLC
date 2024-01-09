@@ -134,6 +134,7 @@ const DropZone: React.FC<FileUploadProps> = ({
 
           {uploadedFiles.length > 0 && (
             <div>
+            <div style={{height: '30vh', overflow: 'scroll'}}>
               <table>
                 <thead>
                   <tr>
@@ -157,8 +158,9 @@ const DropZone: React.FC<FileUploadProps> = ({
                   ))}
                 </tbody>
               </table>
+            </div>
 
-              <div>
+            <div>
                 <p>
                   Total size of files in queue:{" "}
                   <span style={{ color: "#3871e0" }}>
